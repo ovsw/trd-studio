@@ -1,0 +1,36 @@
+{
+  "name": "tridia",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Ovi Savescu <ovi@ovswebsites.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.4.3",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.4.0",
+    "@sanity/default-layout": "^2.4.3",
+    "@sanity/default-login": "^2.2.6",
+    "@sanity/desk-tool": "^2.4.3",
+    "@sanity/vision": "^2.2.6",
+    "a11y-react-emoji": "^1.1.2",
+    "date-fns": "^2.16.1",
+    "get-youtube-id": "^1.0.1",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "react-icons": "^4.1.0",
+    "react-youtube": "^7.13.0",
+    "sanity-plugin-media-library": "^1.0.2",
+    "sanity-plugin-tabs": "^2.0.1"
+  },
+  "devDependencies": {}
+}
