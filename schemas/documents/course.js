@@ -74,12 +74,9 @@ export default {
           fieldset: 'settings',
           name: 'mainImage',
           type: 'image',
-          title: 'Cover Image',
-          description: 'shown as a header background for the page',
-          options: {
-            hotspot: true
-          },
-          validation: Rule => Rule.required().error('missing image')
+          title: 'Icon Image',
+
+          validation: Rule => Rule.required().error('missing icon image')
         },
         // {
         //   fieldset: 'main',

@@ -1,11 +1,11 @@
 import Tabs from "sanity-plugin-tabs";
-import { FiFile } from "react-icons/fi";
+import { FaFileAlt } from "react-icons/fi";
 
 export default {
-  name: "page",
+  name: "pageSpecial",
   title: "Page",
   type: "document",
-  icon: FiFile,
+  icon: FaFileAlt,
   liveEdit: false,
   __experimental_actions: [
     "create",
@@ -62,19 +62,19 @@ export default {
         //   title: "Hero (optional)",
         //   type: "innerHero",
         // },
-        {
-          fieldset: "settings",
-          name: "slug",
-          type: "slug",
-          title: "Slug",
-          validation: (Rule) =>
-            Rule.error("You have to fill out the slug of the page.").required(),
-          description: `This page will have the URL: https://tridia.ro/[whatever you type below]/`,
-          options: {
-            source: "content.title",
-            maxLength: 96,
-          },
-        },
+        // {
+        //   fieldset: "settings",
+        //   name: "slug",
+        //   type: "slug",
+        //   title: "Slug",
+        //   validation: (Rule) =>
+        //     Rule.error("You have to fill out the slug of the page.").required(),
+        //   description: `This page will have the URL: https://tridia.ro/[whatever you type below]/`,
+        //   options: {
+        //     source: "content.title",
+        //     maxLength: 96,
+        //   },
+        // },
         // {
         //   fieldset: 'settings',
         //   name: 'mainImage',
@@ -92,25 +92,25 @@ export default {
         //   title: "Content Sections",
         //   type: "sections",
         // },
-        {
-          fieldset: "main",
-          name: "sections1",
-          title: "Content Sections",
-          type: "array",
-          of: [
-            { type: "rteSection" },
-            { type: "ctaSection" },
-            { type: "stepsSection" },
-            { type: "courseSection" },
-            { type: "photoGallerySection" },
-            { type: "testimonialsSection" },
-            { type: "featCoursesSection" },
-            { type: "locationMapSection" },
-            { type: "staffSection" },
-            { type: "typeformSection" },
-            { type: "reusedSection" },
-          ],
-        },
+        // {
+        //   fieldset: "main",
+        //   name: "sections1",
+        //   title: "Content Sections",
+        //   type: "array",
+        //   of: [
+        //     { type: "rteSection" },
+        //     { type: "ctaSection" },
+        //     { type: "stepsSection" },
+        //     { type: "courseSection" },
+        //     { type: "photoGallerySection" },
+        //     { type: "testimonialsSection" },
+        //     { type: "featCoursesSection" },
+        //     { type: "locationMapSection" },
+        //     { type: "staffSection" },
+        //     { type: "typeformSection" },
+        //     { type: "reusedSection" },
+        //   ],
+        // },
         {
           fieldset: "seo",
           name: "seo",

@@ -1,16 +1,17 @@
 export default {
-  name: 'seo',
-  type: 'object',
+  name: "seo",
+  title: "SEO",
+  type: "object",
   fields: [
     {
-      name: 'title',
-      title: 'SEO Title',
-      type: 'string'
+      name: "title",
+      title: "SEO Title",
+      type: "string",
     },
     {
-      name: 'description',
-      title: 'SEO Description',
-      type: 'text'
+      name: "description",
+      title: "SEO Description",
+      type: "text",
     },
-  ]
-}
+  ],
+};

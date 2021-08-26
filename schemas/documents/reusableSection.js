@@ -1,53 +1,58 @@
-import {ImSection} from 'react-icons/im'
+import { ImSection } from "react-icons/im";
 
 export default {
-  name: 'reusableSection',
-  title: 'Blog Post',
-  type: 'document',
+  name: "reusableSection",
+  title: "Blog Post",
+  type: "document",
   icon: ImSection,
   liveEdit: false,
-  __experimental_actions: [ 'create', 'update', 'publish', 'delete' ], /* 'create', 'delete' */
-  
+  __experimental_actions: [
+    "create",
+    "update",
+    "publish",
+    "delete",
+  ] /* 'create', 'delete' */,
+
   fields: [
     {
-      name: 'title',
-      title: 'Reusable Section title',
+      name: "title",
+      title: "Reusable Section title",
       description: "for internal use, does not appear in front-end",
-      type: 'string',
-      validation: Rule => Rule.required().error('missing title')
+      type: "string",
+      validation: (Rule) => Rule.required().error("missing title"),
     },
     {
-      name: 'sections',
-      title: 'Sections',
-      type: 'array',
+      name: "sections",
+      title: "Sections",
+      type: "array",
       options: {
-        editModal: 'fullscreen'
+        editModal: "fullscreen",
       },
       of: [
-        {type: 'rteSection'},
-        {type: 'ctaSection'},
-        {type: 'stepsSection'},
-        {type: 'courseSection'},
-        {type: 'photoGallerySection'},
-        {type: 'testimonialsSection'},
-        {type: 'featCoursesSection'},
-        {type: 'locationMapSection'},
-        {type: 'staffSection'}
+        { type: "rteSection" },
+        { type: "ctaSection" },
+        { type: "stepsSection" },
+        { type: "courseSection" },
+        { type: "photoGallerySection" },
+        { type: "testimonialsSection" },
+        { type: "featCoursesSection" },
+        { type: "locationMapSection" },
+        { type: "staffSection" },
       ],
-      validation: Rule => Rule.required().error('add at least one section')
+      validation: (Rule) => Rule.required().error("add at least one section"),
     },
   ],
   preview: {
     select: {
-      title: 'title'
+      title: "title",
     },
-    prepare ({title}) {
-      const subtitle = 'Testimonials Section'
+    prepare({ title }) {
+      const subtitle = "Reusable Section";
 
       return {
         title: title,
         subtitle: subtitle,
-      }
-    }
-  }
-}
+      };
+    },
+  },
+};
